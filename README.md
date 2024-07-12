@@ -256,4 +256,4 @@ Delete one product api
 
 - Deploy your frontend application and write clear readME file with demo user password, other credentials
 
-- Now you are done, make a pull request to main branch with description. Try to submit in 2 days, Best of luck.
+- Now you are done, comsume given api, deploy your frontend and provide live link on trallo. Try to submit in 2 days, Best of luck.
