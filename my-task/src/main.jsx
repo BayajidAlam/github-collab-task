@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import './index.css'
+import './index.css';
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Home';
+import Home from './Home/Home';
+import Allproducts from './Home/Products/Allproducts';
 
 const router = createBrowserRouter([
   {
@@ -15,8 +16,10 @@ const router = createBrowserRouter([
     element: <Home></Home>,
     children:[
       {
-        path: '/about',
-        element:<div>hi</div>
+        path: '/allproduct',
+        element:<Allproducts></Allproducts>,
+       
+        
       }
     ]
   },
