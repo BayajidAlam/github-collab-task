@@ -8,6 +8,7 @@ import {
 import LayOut from "/src/MainLayOut/LayOut"
 import Home from './Pages/Home.jsx';
 import ErrorPage from './Pages/ErrorPage.jsx';
+import AddProduct from './Pages/AddProduct.jsx';
 
 
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home/>
+      },
+      {
+        path: "/add-product",
+        element: <AddProduct></AddProduct>
       },
     ],
   },

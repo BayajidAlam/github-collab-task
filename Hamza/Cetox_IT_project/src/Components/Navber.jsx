@@ -1,9 +1,15 @@
+import { NavLink } from "react-router-dom";
+// import './index.css';
+// import './../../src/index.css';
+
 
 
 const Navber = () => {
     return (
-        <div>
-            this is nav
+        <div className="flex justify-evenly  font-semibold bg-gray-500 py-5">
+        <NavLink to={'/'}>Home</NavLink>
+        <NavLink to={'/:productId'}>All Products</NavLink>
+        <NavLink to={'/add-product'}>Add Product</NavLink>
         </div>
     );
 };
