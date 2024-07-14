@@ -1,22 +1,24 @@
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { app } from "../firebaseConfig";
+import { Link } from "react-router-dom";
 
 
 const SignIn = () => {
-    const auth=getAuth(app)
+    const auth = getAuth(app)
     const handleSignInUsers = (e) => {
         e.preventDefault();
         const form = e.target;
         const email = form.email.value
         const password = form.password.value
-        signInWithEmailAndPassword(auth,email,password)
-        .then(response=>{
-            const user= response.user
-           if( user.email){
-            alert("User signin successfull")
-           }
-        })
-       
+        signInWithEmailAndPassword(auth, email, password)
+            .then(response => {
+                const user = response.user
+                if (user.email) {
+                    alert("User signin successfull")
+                }
+            })
+        form.reset()
+
     }
     return (
         <div className='flex justify-center items-center h-[70vh]'>
@@ -29,6 +31,7 @@ const SignIn = () => {
                     <input className='px-5 py-2 w-full my-2' required type="password" placeholder='Enter your Password Here' name="password" id="" />
                     <input className='w-full bg-green-700 text-white font-semibold rounded-lg py-1 mt-2' type="submit" value="SignIn" />
                 </form>
+                <h1 className="text-center font-semibold my-2">Are you new? please <Link className="text-green-700 font-bold" to={'/signup'}>SignUp</Link></h1>
             </div>
 
         </div>
