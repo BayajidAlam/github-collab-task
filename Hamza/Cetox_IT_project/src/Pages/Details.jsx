@@ -16,7 +16,7 @@ const Details = () => {
     <>
         <h1 className="text-5xl font-semibold text-center text-gray-800 mt-9">Product Details Page</h1>
         <div className='  flex justify-center items-center  my-9'>
-            <div className="lg:w-1/2 bg-gray-100  p-10 rounded-lg shadow-lg ">
+            <div className="lg:w-1/2 bg-green-100  p-10 rounded-lg shadow-lg ">
 
                 <h2 className='text-xl'>Product Name: {product?.productName}</h2>
                 <h2 className='text-xl'>Price: {product?.price} </h2>

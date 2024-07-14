@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
             <h2 className='text-xl'>Product Name: {productName}</h2>
             <h2 className='text-xl'>Price: {price}</h2>
             <div className='flex justify-center w-full'>
-                <Link to={_id}>
+                <Link to={`/products/${_id}`}>
                     <button className='px-3 rounded py-1 bg-green-700 text-white w-full ' >Details</button>
                 </Link>
             </div>
