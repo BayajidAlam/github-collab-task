@@ -10,7 +10,7 @@ const Details = () => {
             .then(res => res.json())
             .then(data => setProduct(data?.data))
     }, [id])
-    console.log(product);
+  
 
     return (
     <>
@@ -20,6 +20,7 @@ const Details = () => {
 
                 <h2 className='text-xl'>Product Name: {product?.productName}</h2>
                 <h2 className='text-xl'>Price: {product?.price} </h2>
+                <h2 className='text-xl'>Description: {product?.description} </h2>
                 <h2 className='text-xl'>Shop Owner: {product?.shopOwner} </h2>
                 <div className='flex justify-between'>
                     <p className='text-lg font-semibold '>Product Size: {product?.sku?.size}</p>

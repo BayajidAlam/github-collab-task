@@ -12,6 +12,8 @@ import AddProduct from './Pages/AddProduct.jsx';
 import SignUp from './Pages/SignUp.jsx';
 import SignIn from './Pages/SignIn.jsx';
 import Details from './Pages/Details.jsx';
+import DeleteProduct from './Pages/UpdateProduct.jsx';
+import UpdateProduct from './Pages/UpdateProduct.jsx';
 
 
 
@@ -40,10 +42,12 @@ const router = createBrowserRouter([
         element: <SignIn></SignIn>
       },
       {
-        path:"products/:id",
+        path:"/products/:id",
         element: <Details></Details>,
-    
-        
+      },
+      {
+        path:"/update/:id",
+        element:<UpdateProduct></UpdateProduct>
       },
     ],
   },
